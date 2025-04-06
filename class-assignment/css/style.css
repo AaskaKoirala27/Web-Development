@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    padding: 30px 28px;
+    border: 1px solid red;
+    display: inline-block;
+    margin: 50px;
+    flex-direction: column;
+    background-color: antiquewhite;
+    text-align: center;
+}
+.wrapper img{ 
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center bottom;
+    border: 2px solid red;
+}
+
+.info {
+    margin: 20px;
+    text-align: center;
+    /* flex-direction: column; */
+    
+}
+
+.info1 {
+    margin: 10px;
+    text-align: center;
+}
+
+.fw-bold{
+    font-weight: bold;
+}
+    
+

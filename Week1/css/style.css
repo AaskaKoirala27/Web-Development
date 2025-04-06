@@ -1,0 +1,71 @@
+.text-red {
+    color: red;
+}
+
+.text-blue {
+    color: blue;
+}
+
+.text-green {
+    color: green;
+}
+
+.text-yellow {
+    color: yellow;
+}
+.text-white {
+    color: white;
+}
+
+.text-gray {
+    color: gray;
+}
+
+.bg-red {
+    color: red;
+}
+
+.bg-blue {
+    color: blue;
+
+}
+
+.bg-green {
+    color: green;
+
+}
+
+.bg-yellow {
+    color: yellow;
+
+}
+
+.bg-orange {
+    color: orange;
+
+}
+
+.bg-purple {
+    color: purple;
+
+}
+
+.bg-pink {
+    color: pink;
+
+}
+
+h1{
+    color: red;
+}
+
+.img{
+    width: 100px;
+    height: 100px;
+}
+
+.img150-100 {
+    width: 150px;
+    height: 100px;
+
+}

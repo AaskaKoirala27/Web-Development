@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+nav {
+    background-color: azure;
+    padding: 8px 10px;
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+    /* justify-content: end - yesle chai content lai end ma lagxa */
+    /* justify-content: space- between,- spaces create grxaa element bichma, 
+    space-around,-equal margin element ko gap herera dinxa, space-evenly: sabai tira equal margin dinxa */
+ 
+    gap: 12px;
+}
+
+ul a:hover {
+    color: red; 
+    text-decoration: underline;
+}

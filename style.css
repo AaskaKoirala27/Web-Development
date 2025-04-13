@@ -24,6 +24,62 @@ nav {
 }
 
 ul a:hover {
-    color: red; 
-    text-decoration: underline;
+    color: pink; 
+    text-decoration:dashed underline;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Hero Section */
+
+.hero-section{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./imagemain.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.hero-section__wrapper{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(40 87 141 / 40%);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section__wrapper h1{
+    margin-bottom: 24px;
+    color: white;
+    font-family: "Edu AU VIC WA NT Arrows", cursive;
+}
+
+.hero-section__wrapper p{
+    color: white;
+    font-family: "Underdog", system-ui;
+}
+
+
+.hero-section__link{
+    margin-top: 40px;
+    color: black;
+    background-color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.hero-section__link:hover{
+    color: white; 
+    text-decoration:dashed underline;
+    background-color:rgba(19, 82, 165, 0.314);
 }

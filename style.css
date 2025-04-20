@@ -57,6 +57,13 @@ ul a:hover {
     align-items: center;
 }
 
+/* .hero-section__title{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    font-family: "Edu AU VIC WA NT Arrows", cursive;
+} */
+
 .hero-section__wrapper h1{
     margin-bottom: 24px;
     color: white;
@@ -82,4 +89,86 @@ ul a:hover {
     color: white; 
     text-decoration:dashed underline;
     background-color:rgba(19, 82, 165, 0.314);
+}
+
+.quote{
+    width: 100%;
+    height: 1000px;
+    background-color:#f3ededda;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.statement{
+    padding: 20px;
+    font-size: 40px;
+   margin-bottom: 20px;
+    color:black;
+
+}
+
+.text-center{
+    text-align: center;
+}
+.assignment-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 120px 80px;
+} 
+
+.assignment-list-card {
+border: 1px solid red;
+border-radius: 8px;
+width: 45%;
+height: 200px;
+
+}
+
+@media (max-width: 767px) {
+   footer{
+       background-color: azure;
+    }
+}
+
+@media (max-width: 767px) {
+    .assignment-list-card {
+        width: 100%;
+        height: 200px;;
+    }
+}
+@media (min-width:1200px) {
+    footer{
+        background-color: blue;
+    }
+}
+
+@media (min-width:768) and (max-width: 1200px){
+    footer{
+        background-color: green;
+    }
+}
+
+.go-to-top{
+    background-color: black;
+    color: white;
+    size: 1.5rem;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 10px;
+    bottom: 100px;
+
+}
+
+.go-to-top svg{
+    fill: white;
 }

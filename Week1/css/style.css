@@ -13,6 +13,7 @@
 .text-yellow {
     color: yellow;
 }
+
 .text-white {
     color: white;
 }
@@ -55,11 +56,11 @@
 
 }
 
-h1{
+h1 {
     color: red;
 }
 
-.img{
+.img {
     width: 100px;
     height: 100px;
 }

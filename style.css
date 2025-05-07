@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: blanchedalmond;
+    background-color: rgb(255, 255, 255);
 }
 
 nav {
@@ -13,22 +17,22 @@ nav {
     padding: 8px 10px;
 }
 
-.navbar{
+.navbar {
     list-style: none;
     display: flex;
     /* justify-content: end - yesle chai content lai end ma lagxa */
     /* justify-content: space- between,- spaces create grxaa element bichma, 
     space-around,-equal margin element ko gap herera dinxa, space-evenly: sabai tira equal margin dinxa */
- 
+
     gap: 12px;
 }
 
 ul a:hover {
-    color: pink; 
-    text-decoration:dashed underline;
+    color: pink;
+    text-decoration: dashed underline;
 }
 
-.nav-link{
+.nav-link {
     text-decoration: none;
     color: black;
     font-size: 20px;
@@ -37,16 +41,16 @@ ul a:hover {
 
 /* Hero Section */
 
-.hero-section{
+.hero-section {
     width: 100%;
     height: 100vh;
     background-image: url('./imagemain.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
-.hero-section__wrapper{
+.hero-section__wrapper {
     height: 100%;
     width: 100%;
     background-color: rgb(40 87 141 / 40%);
@@ -64,19 +68,19 @@ ul a:hover {
     font-family: "Edu AU VIC WA NT Arrows", cursive;
 } */
 
-.hero-section__wrapper h1{
+.hero-section__wrapper h1 {
     margin-bottom: 24px;
     color: white;
     font-family: "Edu AU VIC WA NT Arrows", cursive;
 }
 
-.hero-section__wrapper p{
+.hero-section__wrapper p {
     color: white;
     font-family: "Underdog", system-ui;
 }
 
 
-.hero-section__link{
+.hero-section__link {
     margin-top: 40px;
     color: black;
     background-color: white;
@@ -85,79 +89,149 @@ ul a:hover {
     border-radius: 4px;
 }
 
-.hero-section__link:hover{
-    color: white; 
-    text-decoration:dashed underline;
-    background-color:rgba(19, 82, 165, 0.314);
+.hero-section__link:hover {
+    color: white;
+    text-decoration: dashed underline;
+    background-color: rgba(19, 82, 165, 0.314);
 }
 
-.quote{
+.quote {
     width: 100%;
     height: 1000px;
-    background-color:#f3ededda;
+    background-color: #f3ededde;
     display: flex;
     justify-content: center;
     /* align-items: center; */
     flex-direction: column;
     gap: 20px;
-    
+
 }
 
-.statement{
+.statement {
     padding: 20px;
     font-size: 40px;
-   margin-bottom: 20px;
-    color:black;
+    margin-bottom: 20px;
+    color: black;
 
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
+
 .assignment-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
     padding: 120px 80px;
-} 
-
-.assignment-list-card {
-border: 1px solid red;
-border-radius: 8px;
-width: 45%;
-height: 200px;
-
 }
 
+.assignment-list-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 5px;
+    border-radius: 8px;
+    border: 2px solid rgb(223, 223, 223);
+    border-radius: 8px;
+    padding: 20px;
+    width: 45%;
+    height: 250px;
+}
+
+.assignment-list-card__title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(99, 99, 99);
+}
+
+.assignment-list-card h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: rgb(21, 118, 100);
+}
+
+.assignment-1 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.assignment-1 img {
+    width: 200px;
+    opacity: 1;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center bottom;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    bottom: -30px;
+    right: 20px;
+}
+
+
+.assignment-list-card__link {
+    padding: 10px;
+    margin-top: 30px;
+    font-size: small;
+    padding-inline: 20px;
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 30px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    width: max-content;
+    transition: all 0.3s ease-in-out;
+}
+
+.assignment-1:hover {
+    border-color: rgb(85, 158, 214);
+    background: linear-gradient(90deg, rgba(61, 222, 227, 0.5) 0%, rgba(255, 255, 255, 0.5) 50%);
+}
+
+.assignment-1:hover img {
+    transform: scale(1.2) rotate(8deg);
+}
+
+.assignment-1:hover .assignment-list-card__link {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+
+
 @media (max-width: 767px) {
-   footer{
-       background-color: azure;
+    footer {
+        background-color: azure;
     }
 }
 
 @media (max-width: 767px) {
     .assignment-list-card {
         width: 100%;
-        height: 200px;;
+        height: 200px;
+        ;
     }
 }
+
 @media (min-width:1200px) {
-    footer{
+    footer {
         background-color: blue;
     }
 }
 
-@media (min-width:768) and (max-width: 1200px){
-    footer{
+@media (min-width:768) and (max-width: 1200px) {
+    footer {
         background-color: green;
     }
 }
 
-.go-to-top{
-    background-color: black;
-    color: white;
-    size: 1.5rem;
+.go-to-top {
+    size: 1rgb(70, 206, 168);
     width: 100px;
     height: 100px;
     display: flex;
@@ -169,18 +243,19 @@ height: 200px;
 
 }
 
-.go-to-top svg{
-    fill: white;
-}
-.position-relative{
-    position: relative;
-   padding: 40px 300px;
-   width: 100%;
-    height: 100vh;
-   background-color: white;
+.go-to-top svg {
+    fill: rgb(30, 202, 102);
 }
 
-.position-absolute{
+.position-relative {
+    position: relative;
+    padding: 40px 300px;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.position-absolute {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -189,7 +264,8 @@ height: 200px;
     width: 200px;
     transform: translate(-50%, -50%);
 }
-.w-100{
+
+.w-100 {
     width: 100%;
 }
 

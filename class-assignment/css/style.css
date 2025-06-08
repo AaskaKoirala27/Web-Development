@@ -1,15 +1,15 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 html,
-body{
+body {
     scroll-behavior: smooth;
-  }
+}
 
-.wrapper{
+.wrapper {
     padding: 30px 40px;
     border: 3px solid rgb(90, 198, 190);
     display: inline-block;
@@ -19,13 +19,15 @@ body{
     background-color: rgb(234, 255, 254);
     text-align: center;
 }
-.wrapper1{
+
+.wrapper1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.wrapper img{ 
+
+.wrapper img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -38,7 +40,7 @@ body{
     margin: 20px;
     text-align: center;
     /* flex-direction: column; */
-    
+
 }
 
 .info1 {
@@ -46,7 +48,7 @@ body{
     text-align: center;
 }
 
-.fw-bold{
+.fw-bold {
     font-weight: bold;
     font-size: 25px;
 }
